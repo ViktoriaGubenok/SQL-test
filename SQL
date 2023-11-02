@@ -182,6 +182,9 @@ where CustomerID=1;
 Update Customers
 set ContactName='Juan'
 where Country='Mexico';
+Будьте осторожны при обновлении записей. Если вы опустите WHERE предложение, ВСЕ записи будут обновлены! то есть весь столбец обновится и будет Juan
+Update Customers
+set ContactName='Juan';
 
 
 

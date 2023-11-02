@@ -129,6 +129,9 @@ between – между
 Выберите клиентов, которые не из Парижа или Лондона:
 Select * from Customers
 where City not in ('Paris', 'London');     
+Выберите клиентов с идентификатором CustomerID, не превышающим 50:
+Select * from Customers
+where not CustomerID > 50;      
 
 
 

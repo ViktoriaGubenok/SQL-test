@@ -132,6 +132,15 @@ where City not in ('Paris', 'London');
 Выберите клиентов с идентификатором CustomerID, не превышающим 50:
 Select * from Customers
 where not CustomerID > 50;      
+Примечание: Существует оператор not-greater-then: !> который даст вам тот же результат. 
+Выберите клиентов с идентификатором CustomerID не менее 50:
+Select * from Customers
+where not CustomerID < 50;                                  
+Примечание: Существует оператор not-less-then: !< который дал бы вам тот же результат.
+
+SQL INSERT INTO
+Инструкция INSERT INTO используется для вставки новых записей в таблицу.
+INSERT  - вставлять
 
 
 

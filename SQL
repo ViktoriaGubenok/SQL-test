@@ -169,6 +169,19 @@ SELECT CustomerName, ContactName, Address
 FROM Customers
 WHERE Address ISNOT NULL;
 
+SQL UPDATE
+Инструкция UPDATE используется для изменения существующих записей в таблице.
+UPDATE – ОБНОВЛЕНИЕ
+Примечание: Будьте осторожны при обновлении записей в таблице! Обратите внимание на предложение WHERE в инструкции UPDATE . WHEREВ предложении указывается, какие записи следует обновить. Если вы опустите WHERE предложение, все записи в таблице будут обновлены!
+Следующая инструкция SQL обновляет первого клиента (CustomerID = 1) новым контактным лицом и новым городом.
+Update Customers
+set ContactName='Alfred Schmidt', City='Frankfurt'
+where CustomerID=1;
+Это WHERE предложение, которое определяет, сколько записей будет обновлено.
+Следующая инструкция SQL обновит имя контакта до "Juan" для всех записей, где страна - "Мексика".:
+Update Customers
+set ContactName='Juan'
+where Country='Mexico';
 
 
 

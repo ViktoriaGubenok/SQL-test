@@ -125,6 +125,10 @@ where CustomerName not like 'A%';
 Выберите клиентов с идентификатором CustomerID не от 10 до 60:
 Select * from Customers
 where CustomerID not between 10 and 60;
+between – между 
+Выберите клиентов, которые не из Парижа или Лондона:
+Select * from Customers
+where City not in ('Paris', 'London');     
 
 
 

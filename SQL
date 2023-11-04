@@ -210,3 +210,20 @@ from Products;
 При использовании MIN() or MAX() возвращаемый столбец по умолчанию будет называться MIN(field) or MAX(field). Чтобы присвоить столбцу новое имя, используйте AS ключевое слово:
 Select min(Price) as SmallecstPrice
 from Products;
+
+SQL COUNT
+COUNT- считать
+COUNT()Функция возвращает количество строк, соответствующее указанному критерию.
+Select count(*)
+from Products;
+программа посчитала все строки из таблицы 
+Вы можете добавить WHERE предложение для указания условий:
+Select count(ProductID)
+from Products
+where Price >20;
+Вы можете указать имя столбца вместо символа звездочки (*).
+Если вы укажете столбец вместо (*), значения NULL не будут учитываться.
+Найдите количество продуктов, для которых значение ProductName не равно null:
+Select count (ProductName)
+from Products;
+

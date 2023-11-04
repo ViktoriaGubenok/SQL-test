@@ -238,7 +238,10 @@ from Products
 where CategoryID = 1;
 Назовите столбец " average  price".:
 average – среднее значение
-
+Select avg(Price) as [average price]
+from Products;
+Назовите столбец " average  price".:
+average – среднее значение
 Select avg(Price) as [average price]
 from Products;
 

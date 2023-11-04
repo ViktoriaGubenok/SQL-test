@@ -193,6 +193,8 @@ SQL DELETE
 DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
 Можно удалить все строки в таблице, не удаляя саму таблицу. Это означает, что структура таблицы, атрибуты и индексы останутся нетронутыми:
 Delete from Customers;
+Чтобы полностью удалить таблицу, используйте инструкцию DROP TABLE:
+Drop table Customers;
 
 
 

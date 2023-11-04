@@ -227,3 +227,8 @@ where Price >20;
 Select count (ProductName)
 from Products;
 
+SQL AVG()
+AVG()Функция возвращает среднее значение числового столбца.
+Найти среднюю цену всех товаров:
+Select avg(Price)
+from Products;

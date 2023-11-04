@@ -202,4 +202,11 @@ SQL SELECT TOP
 Выберите только первые 3 записи таблицы Customers:
 Select top 3 * from Customers;
 
-
+SQL MIN() and MAX()
+MIN()Функция возвращает наименьшее значение выбранного столбца.
+MAX()Функция возвращает наибольшее значение выбранного столбца.
+Select min(Price)
+from Products;
+При использовании MIN() or MAX() возвращаемый столбец по умолчанию будет называться MIN(field) or MAX(field). Чтобы присвоить столбцу новое имя, используйте AS ключевое слово:
+Select min(Price) as SmallecstPrice
+from Products;

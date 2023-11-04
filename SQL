@@ -186,7 +186,8 @@ where Country='Mexico';
 Update Customers
 set ContactName='Juan';
 
-
+SQL DELETE
+Инструкция DELETE используется для удаления существующих записей в таблице.
 
 
 

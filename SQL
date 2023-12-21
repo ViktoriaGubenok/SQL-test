@@ -85,3 +85,28 @@ join PC
 on Product.model=PC.model
 where maker = 'A';
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Упражнение 15. 
+Найдите размеры жестких дисков, совпадающих у двух и более PC. Вывести: HD
+Select hd from PC
+group by hd
+having count(model) >= 2;
+
+

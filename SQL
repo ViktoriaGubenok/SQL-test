@@ -68,3 +68,8 @@ Select model, price
 from Printer  
 where price = (select max(price) 
                from Printer);
+
+Упражнение 11. 
+Найдите среднюю скорость ПК.
+Select avg(speed) as Speed_avg from PC
+

@@ -117,3 +117,11 @@ where p1.speed = p2.speed
 and p1.ram = p2.ram
 and p1.model > p2.model;
 
+Упражнение 17. 
+Найдите модели ПК-блокнотов, скорость которых меньше скорости каждого из ПК.
+Вывести: type, model, speed
+Select distinct P.type, P.model, L.speed
+from Laptop L
+join Product P 
+on L.model=P.model
+where L.speed<(select min(speed) from PC)

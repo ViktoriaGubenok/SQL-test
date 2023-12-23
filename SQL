@@ -143,3 +143,11 @@ from laptop
 join product 
 on product.model = laptop.model
 group by product.maker
+
+Упражнение 20. 
+Найдите производителей, выпускающих по меньшей мере три различных модели ПК. Вывести: Maker, число моделей ПК.
+Select maker, count(model)
+from Product
+where type = 'PC'
+group by Product.maker
+having count(distinct model) >= 3;

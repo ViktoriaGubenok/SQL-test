@@ -151,3 +151,11 @@ from Product
 where type = 'PC'
 group by Product.maker
 having count(distinct model) >= 3;
+
+Упражнение 21. 
+Найдите максимальную цену ПК, выпускаемых каждым производителем, у которого есть модели в таблице PC.
+Вывести: maker, максимальная цена.
+Select Product.maker, max(PC.price)
+from product, pc
+where Product.model = PC.model
+group by product.maker;

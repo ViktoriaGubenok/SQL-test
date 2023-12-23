@@ -125,3 +125,13 @@ from Laptop L
 join Product P 
 on L.model=P.model
 where L.speed<(select min(speed) from PC)
+
+Упражнение 18. 
+Найдите производителей самых дешевых цветных принтеров. Вывести: maker, price
+Select distinct P.maker, PR.price
+from Printer as PR
+join Product as P
+on P.model=PR.model
+where PR.color = 'y' 
+and PR.price = (select min(price) from Printer WHERE printer.color = 'y');
+

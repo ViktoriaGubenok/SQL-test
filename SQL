@@ -183,3 +183,18 @@ from Product
 join Laptop
 on Product.model=Laptop.model
 where Laptop.speed >= 750;
+
+Упражнение 24. 
+Перечислите номера моделей любых типов, имеющих самую высокую цену по всей имеющейся в базе данных продукции.
+with all_model as (
+select model, price 
+from PC
+union all
+select model, price 
+from Printer
+union all
+select model, price 
+from Laptop)
+Select distinct model 
+from all_model 
+where price = (select max(price) from all_model);

@@ -32,7 +32,7 @@ join Product as P
 on L.model = P.model 
 where L.hd >= 10;
 
-Упражнение 7. 
+Упражнение 7.
 Найдите номера моделей и цены всех имеющихся в продаже продуктов (любого типа) производителя B (латинская буква).
 Select distinct Product.model, PC.price
 from Product join PC on Product.model=PC.model

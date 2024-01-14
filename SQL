@@ -46,7 +46,7 @@ Select distinct Product.model, Printer.price
 from Product join Printer on Product.model=Printer.model
 where maker = 'B';
 
-Упражнение 8. 
+Упражнение 8.
 Найдите производителя, выпускающего ПК, но не ПК-блокноты.
 Select distinct maker from Product
 where type = 'PC'

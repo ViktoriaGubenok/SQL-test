@@ -78,7 +78,7 @@ Select avg(speed) as Speed_avg from PC
 Select avg(speed) as Avg_speed from Laptop 
 where price > 1000
 
-Упражнение 13. 
+Упражнение 13.
 Найдите среднюю скорость ПК, выпущенных производителем A.
 Select avg(speed) from Product
 join PC

@@ -62,7 +62,7 @@ on Product.model=PC.model
 where type='PC'
 and speed >= 450
 
-Упражнение 10. 
+Упражнение 10.
 Найдите модели принтеров, имеющих самую высокую цену. Вывести: model, price
 Select model, price  
 from Printer  

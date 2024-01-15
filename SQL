@@ -54,7 +54,7 @@ except
 Select distinct maker from Product
 Where type = 'laptop';
 
-Упражнение 9. 
+Упражнение 9.
 Найдите производителей ПК с процессором не менее 450 Мгц. Вывести: Maker
 Select distinct maker from Product 
 left join PC 

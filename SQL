@@ -211,7 +211,7 @@ where model in (select model from Product where maker = 'A' and type = 'Laptop')
 )
 as P;
 
-Упражнение 27. 
+Упражнение 27.
 Найдите средний размер диска ПК каждого из тех производителей, которые выпускают и принтеры. Вывести: maker, средний размер HD.
 Select p.maker, avg(PC.hd) 
 from Product as P

@@ -187,7 +187,7 @@ Select distinct model
 from all_model 
 where price = (select max(price) from all_model);
 
-Упражнение 25. 
+Упражнение 25.
 Найдите производителей принтеров, которые производят ПК с наименьшим объемом RAM и с самым быстрым процессором среди всех ПК, имеющих наименьший объем RAM. Вывести: Maker
 Select distinct Pr.maker
 from Product as Pr
